@@ -1,0 +1,236 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+  
+}
+
+.menu-ouvert .header-container {
+  
+  transition: height 0.3s ease; 
+  height: 100%;
+}
+
+
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.header-left h1 {
+  margin: 0;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  margin-right: 0.5rem;
+}
+
+button[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #f2f2f2;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+
+nav li {
+  margin-left: 2rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 900px) {
+  .header-container {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .header-left img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .form-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input[type="text"] {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+    border-radius: 3px;
+  }
+
+  button[type="submit"] {
+    border-radius: 3px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  nav li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.switch {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.switch__input {
+  display: none;
+}
+
+.switch__icon {
+  fill: currentColor;
+}
+
+.switch__inner {
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #ccc;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.switch__inner:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px; 
+  width: 16px;
+  height: 16px; 
+  background-color: #fff;
+  border-radius: 50%; 
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.dark-mode .switch__input:checked + .switch__inner {
+  background-color: #333; 
+}
+
+.dark-mode .switch__input:checked + .switch__inner:before {
+  transform: translateX(20px); 
+}
+
+.switch__sr {
+  visibility: hidden;
+  position: absolute;
+}
+
+.switch:hover .switch__inner {
+  background-color: #aaa;
+}
+
+.switch:hover .switch__sr {
+  visibility: hidden;
+}
+
+.dark-mode .switch__inner {
+  background-color: #444; 
+}
+
+.dark-mode .switch__icon {
+  fill: #ccc; 
+}
+.dark-mode .switch__inner {
+  background-color: #444;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .switch__inner:before {
+  background-color: #666;
+}
+
+.dark-mode .switch__icon {
+  fill: #ccc;
+}
+
+.dark-mode .switch__inner:before,
+.dark-mode .switch__input:checked + .switch__inner:before {
+  transform: translateX(20px);
+  transition: transform 0.3s ease;
+}
+
+
+.menu-bouton {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .bouton {
+    display: none;
+  }
+
+  .menu-bouton {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .menu-ouvert .bouton {
+    display: block;
+    
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    height: 180px; 
+  }
+}

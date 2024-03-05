@@ -1,0 +1,21 @@
+.items-per-page-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.items-per-page-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.items-per-page-dropdown {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.items-per-page-dropdown option {
+    padding: 8px 12px;
+}

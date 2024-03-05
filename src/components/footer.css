@@ -1,0 +1,36 @@
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #f2f2f2;
+}
