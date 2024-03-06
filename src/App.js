@@ -39,7 +39,7 @@ function App() {
               <Route path="/recherche" element={<Recherche/>} />
               <Route path="/oeuvres" element={<OeuvresPage />} />
               <Route path="/rechercheAvancée" element={<RechercheAvancée />} />
-              <Route path="*" element={<NotFound />} />
+              <Route path="/*" element={<NotFound />} />
             </Routes>
           </div>
           <Footer />

@@ -90,7 +90,7 @@ const OeuvresPage = () => {
           )}
         </div>
         <div className="col-md-6">
-          <h2 className="card-title">Work Details</h2>
+          <h2 className="card-title">Details</h2>
           <h3>Title: {title}</h3>
           <p>Author: {author_name}</p>
           <p>Publication Year: {first_publish_year}</p>

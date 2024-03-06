@@ -121,7 +121,7 @@ const AdvancedSearch = () => {
                     <div className="row">
                       {currentItems.map((work, index) => (
                           <div className="col-md-3 col-sm-6 mb-4" key={index}>
-                            <Link to={`/works?key=${work.key}`} className="card-link">
+                            <Link to={`/oeuvres?key=${work.key}`} className="card-link">
                               <div className="card">
                                 <div className="card-img-wrapper">
                                   {work.cover_i ? (

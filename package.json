@@ -22,7 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test": "react-scripts test --coverage --watchAll --ignore='C:\\Users\\romai\\Desktop\\webdev\\src\\index.js'"
+    "test": "react-scripts test --coverage --watchAll"
   },
   "eslintConfig": {
     "extends": [
